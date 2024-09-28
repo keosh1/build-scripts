@@ -29,7 +29,7 @@ echo "============="
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
-breakfast mondrian userdebug
+lunch lineage_mondrian-ap2a-userdebug || lunch lineage_mondrian-userdebug
 make installclean
 mka bacon
 #croot
