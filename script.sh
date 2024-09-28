@@ -29,7 +29,7 @@ python apply-patches.py
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
-lunch lineage_mondrian-userdebug
+lunch lineage_mondrian-userdebug || lunch lineage_mondrian-userdebug
 make installclean
 mka bacon
 #croot
