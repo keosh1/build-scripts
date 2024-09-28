@@ -23,8 +23,8 @@ echo "============="
 # Apply all the patches.
 # You need to reapply the patch after every sync
 #croot
-git clone https://github.com/flakeforever/device_xiaomi_mondrian-patch.git
-python device_xiaomi_mondrian-patch/apply-patches.py
+#git clone https://github.com/flakeforever/device_xiaomi_mondrian-patch.git
+#python device_xiaomi_mondrian-patch/apply-patches.py
 
 # Set up build environment
 source build/envsetup.sh
