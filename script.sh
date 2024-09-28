@@ -22,13 +22,15 @@ echo "Sync success"
 echo "============="
 # Apply all the patches.
 # You need to reapply the patch after every sync
+#croot
 sudo apt install python3
 git clone https://github.com/flakeforever/device_xiaomi_mondrian-patch.git
-python device/xiaomi/mondrian-patch/apply-patches.py
+python apply-patches.py
 
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
-lunch mondrian-user
+lunch lineage_mondrian-user
 make installclean
-mka bacon
+#croot
+m evolution
