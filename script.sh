@@ -2,7 +2,7 @@
 
 rm -rf .repo/local_manifests/
 
-repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs
+repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -29,8 +29,8 @@ echo "============="
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
-lunch lineage_mondrian-ap2a-userdebug || lunch lineage_mondrian-userdebug
+lunch lineage_mondrian-userdebug
 make installclean
 mka bacon
 #croot
-m evolution
+rise b
