@@ -22,10 +22,9 @@ echo "Sync success"
 echo "============="
 # Apply all the patches.
 # You need to reapply the patch after every sync
-#croot
-#git clone https://github.com/flakeforever/device_xiaomi_mondrian-patch.git
-#python device_xiaomi_mondrian-patch/apply-patches.py
-
+#cherry-pick
+git fetch https://github.com/DanipunK1-mondrian-DC/external_wpa_supplicant_8.git
+git cherry-pick e8faf37f10bc06610d682c8fa3fc6c8c1c93fc79
 # Set up build environment
 source build/envsetup.sh
 echo "====== Envsetup Done ======="
