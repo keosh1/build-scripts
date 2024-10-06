@@ -24,7 +24,7 @@ export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
 # ...and run our repopicks script
-bash https://raw.githubusercontent.com/keosh1/local_manifests/refs/heads/los21/repopicks.sh
+curl https://raw.githubusercontent.com/keosh1/local_manifests/refs/heads/los21/repopicks.sh | bash
 
 # Set up build environment
 source build/envsetup.sh
