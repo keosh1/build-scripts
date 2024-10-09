@@ -7,7 +7,11 @@ repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs --de
 echo "=================="
 echo "Repo init success"
 echo "=================="
-
+# Rom source remove folder
+rm -rf hardware/qcom-caf/sm8450/display
+echo "=================="
+echo "remove folder"
+echo "=================="
 # Clone local_manifests repository
 git clone -b los21 https://github.com/keosh1/local_manifests.git .repo/local_manifests
 echo "============================"
@@ -22,9 +26,6 @@ echo "============================"
 export BUILD_USERNAME=keosh1
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
-
-# ...and run our repopicks script
-curl https://raw.githubusercontent.com/keosh1/local_manifests/refs/heads/los21/repopicks.sh | bash
 
 # Set up build environment
 source build/envsetup.sh
